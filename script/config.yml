@@ -1,0 +1,35 @@
+# Dataset configuration
+dataset:
+  # Root path to save all dataset folders
+  root_dir: ../dataset  # relative to script location
+
+  # All supported datasets
+  available:
+    - sift-1m
+    - gist-1m
+    - deep-10m
+    - mnist-8m
+    - mtg-40k
+    - glove-twitter-1m
+    - glove-crawl-2m
+    - laion-1m
+    - youtube-6m
+
+  # The subset of datasets you want to download
+  download:
+    - sift-1m
+    - gist-1m
+    - deep-10m
+    - mnist-8m
+    - mtg-40k
+    - glove-twitter-1m
+    - glove-crawl-2m
+    - laion-1m
+    - youtube-6m
+
+# Proxy settings
+proxy:
+  enabled: true                # Enable proxy (e.g., in China)
+  http: http://127.0.0.1:7890  # set if `enabled` is true
+  https: http://127.0.0.1:7890 # set if `enabled` is true
+  youtube_6m_mirror: asia      # Change to `us` or `eu` as needed
