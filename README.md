@@ -1,15 +1,23 @@
-
 # A Survey of Filtered Approximate Nearest Neighbor Search over Vector-Scalar Hybrid Data
 
-This repository contains the code and data analysis scripts for the paper:
+This repository contains the data analysis code for the paper.
 
 ## Overview
 
-This project provides:
+This project provides scripts for:
 
-- Scripts for downloading and preprocessing benchmark datasets
-- Jupyter notebooks for exploring and visualizing datasets
-- Experimental reproductions of the results in the survey
+- Downloading datasets, including:
+  - `sift-1m`
+  - `gist-1m`
+  - `deep-10m`
+  - `mnist-8m`
+  - `mtg-40k`
+  - `glove-twitter-1m`
+  - `glove-crawl-2m`
+  - `laion-1m`
+  - `youtube-6m`
+- Exploring and summarizing dataset contents
+- Reproducing the experimental results presented in the survey
 
 ## Environment Setup
 
@@ -21,9 +29,9 @@ source env.sh
 
 This script will:
 
-* Create a new conda environment named `fanns`
-* Install required system dependencies (e.g., `gcc`, `cmake`, `ninja`)
-* Install all Python packages (e.g., `numpy`, `scikit-learn`, `tensorflow`, `faiss`, etc.)
+- Create a new conda environment named `fanns`
+- Install required system dependencies (e.g., `gcc`, `cmake`)
+- Install all Python packages (e.g., `umap-learn`, `faiss-cpu`)
 
 > **Important**: After installation, manually locate the `mahalanobis` package using
 > `pip show mahalanobis`, and replace all occurrences of `np.linalg.inv` with `np.linalg.pinv`
