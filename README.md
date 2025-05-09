@@ -1,4 +1,4 @@
-# A Survey of Filtered Approximate Nearest Neighbor Search over Vector-Scalar Hybrid Data
+# Survey of Filtered Approximate Nearest Neighbor Search over the Vector-Scalar Hybrid Data
 
 This repository contains the data analysis code for the paper.
 
@@ -16,7 +16,7 @@ This project provides scripts for:
   - `glove-crawl-2m`
   - `laion-1m`
   - `youtube-6m`
-- Exploring and summarizing dataset contents
+- Exploring the above dataset contents
 - Reproducing the experimental results presented in the survey
 
 ## Environment Setup
@@ -25,7 +25,7 @@ To set up the environment using `conda`, run:
 
 ```bash
 source env.sh
-````
+```
 
 This script will:
 
@@ -48,20 +48,15 @@ importlib.reload(mahalanobis)
 
 ### 1. Dataset Download
 
-```bash
-cd script
-python dataset_download.py
-```
+To download and extract all datasets specified in `config.yml`, run `dataset_download.py`.
 
-This will download and extract all datasets specified in `config.yml`.
+### 2. Dataset Overview
 
-### 2. Dataset Inspection
+To inspect dataset structure and basic contents, run `dataset_overview.ipynb`.
 
-Run `dataset_overview.ipynb` to inspect dataset structure and basic statistics:
+### 3. Dataset Analysis
 
-### 3. Reproduce Experiments
-
-To reproduce the experiments and visualizations presented in the survey, run `dataset_analysis.ipynb`
+To reproduce the experiments presented in the survey, run `dataset_analysis.ipynb`. 
 
 ## Citation
 
